@@ -3,7 +3,7 @@
 		<section id="about">
 			<h2 class="section-title">About</h2>
 			<div class="content">
-				<p>I am a seasoned web developer with a demonstrated history of working in the web industry for over 5 years. I am well-versed CSS3 (Scss, Sass), JavaScript (Vue.js, ES6), Python (Django, Flask), and database technologies like PostgreSQL, MySQL, and MongoDB. I build scalable and performance-oriented responsive websites and write clean and well-documented code.</p>
+				<p>I am a seasoned full-stack web developer, focused on front-end, with a demonstrated history of working in the web industry for over 5 years. I am well-versed CSS3 (Scss, Sass), JavaScript (Vue.js, ES6), Python (Django, Flask), and database technologies like PostgreSQL, MySQL, and MongoDB. I build scalable and performance-oriented responsive websites and write clean and well-documented code.</p>
 
 				<p>Currently pursuing a Bachelor degree in Computer Science and expecting to graduate in 2018.</p>
 

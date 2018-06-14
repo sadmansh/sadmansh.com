@@ -5,7 +5,7 @@
     			<div class="container">
     				<img src="./assets/triangle.svg">
     				<h1>Hey, I am Sadman,</h1>
-    				<h2>Your average bearded web developer!</h2>
+    				<h2>A full-stack web developer living in Dhaka, Bangladesh!</h2>
     			</div>
     		</div>
     		<div class="right">
@@ -86,6 +86,10 @@ main {
 		margin: 0 auto 2rem auto;
 		width: 120px;
 		height: auto;
+	}
+
+	h2 {
+		font-weight: 300;
 	}
 }
 
