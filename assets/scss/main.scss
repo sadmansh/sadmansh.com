@@ -1,0 +1,36 @@
+@import "fonts";
+@import "vars";
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 960px;
+	margin: 0 auto;
+}	
+	
+.nav-brand {
+	display: block;
+
+	img {
+		width: 32px;
+		height: auto;
+	}
+}
+
+.menu {
+	li {
+		display: inline-block;
+		margin: 0 1rem;
+		list-style-type: none;
+
+		a {
+			color: $text;
+			text-decoration: none;
+			font-family: $camphor;
+			font-size: .85rem;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+}
