@@ -16,7 +16,10 @@
 					<a href="https://newscred.com" target="_blank" id="newscred-link">NewsCred</a>.
 				</p>
 
-				<p>Click <a href="static/resume_sadman_shawmik.pdf" id="resume-link">here</a> to see my resume.</p>
+				<p>
+					Click <a href="static/resume_sadman_shawmik.pdf" id="resume-link" target="_blank">here</a> to see my
+					resume.
+				</p>
 			</div>
 		</section>
 
@@ -52,7 +55,7 @@
 			<div class="content">
 				<p>
 					Want to work together? Shoot me an email at
-					<a href="mailto:hello@sadmansh.com" id="mail-link">hello@sadmansh.com</a>.
+					<a href="mailto:hello@sadmansh.com" id="mail-link" target="_blank">hello@sadmansh.com</a>.
 				</p>
 			</div>
 		</section>
