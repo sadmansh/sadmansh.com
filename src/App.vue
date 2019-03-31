@@ -100,7 +100,9 @@ main {
 	}
 
 	.social {
+		padding: 0;
 		text-align: center;
+
 		li {
 			display: inline-block;
 			margin: 0 0.5rem;
