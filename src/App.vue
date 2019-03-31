@@ -1,35 +1,42 @@
 <template>
 	<div id="app">
-    	<main>
-    		<div class="left">
-    			<div class="container">
-    				<img src="./assets/triangle.svg">
-    				<h1>Hey, I am Sadman,</h1>
-    				<h2>A full-stack web developer living in Dhaka, Bangladesh!</h2>
-    			</div>
-    		</div>
-    		<div class="right">
-    			<Home />
-    		</div>
-    	</main>
-  </div>
+		<main>
+			<div class="left">
+				<div class="container">
+					<img src="./assets/triangle.svg" />
+					<h1>Hey, I am Sadman,</h1>
+					<h2>A full-stack web developer based in Dhaka, Bangladesh.</h2>
+					<ul class="social">
+						<li><a href="https://github.com/sadmansh" target="_blank" id="github-link">GitHub</a></li>
+						<li>
+							<a href="https://linkedin.com/in/sadmansh" target="_blank" id="linkedin-link">LinkedIn</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/sadmansh" target="_blank" id="instagram-link">Instagram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<Home />
+			</div>
+		</main>
+	</div>
 </template>
 
 <script>
-
-import Home from '@/components/Home.vue'
+import Home from '@/components/Home.vue';
 
 export default {
 	name: 'App',
 	components: {
 		Home
 	}
-}
+};
 </script>
 
 <style lang="scss">
-
-@import "./assets/base";
+@import './assets/base';
 
 body {
 	padding: 0;
@@ -58,7 +65,7 @@ main {
 .right {
 	width: 100%;
 
-	@include breakpoint (l) {
+	@include breakpoint(l) {
 		width: 50%;
 	}
 }
@@ -74,7 +81,7 @@ main {
 	background: #fbfbfb;
 	text-align: center;
 
-	@include breakpoint (l) {
+	@include breakpoint(l) {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -91,37 +98,29 @@ main {
 	h2 {
 		font-weight: 300;
 	}
+
+	.social {
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 0.5rem;
+
+			a {
+				position: relative;
+				text-decoration: none;
+				font-weight: bold;
+				color: #747fe0;
+			}
+		}
+	}
 }
 
 .right {
-	@include breakpoint (l) {
+	@include breakpoint(l) {
 		position: relative;
 		top: 0;
 		right: 0;
 		left: 50%;
 	}
 }
-
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
