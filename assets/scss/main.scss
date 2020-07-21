@@ -1,6 +1,16 @@
 @import "fonts";
 @import "vars";
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -11,8 +21,9 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }	
 	
 .nav-brand {
@@ -42,27 +53,54 @@ nav {
 
 
 main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 960px;
-	height: 100%;
+	color: $text;
+}
+
+section {
+	padding: 4rem 0;
+	width: 100%;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 3rem;
+}
+
+h2 {
+	margin-top: 0;
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1.05rem;
+	line-height: 1.75rem;
+}
+
+main a,
+footer a {
+	display: inline-block;
+	padding-bottom: .25rem;
+	border-bottom: 2px solid $cyan;
+	color: $accent;
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+	transform: none;
+	transition: transform 300ms ease-out;
+
+	&:hover {
+		transform: translateY(4px);
+	}
+}
+
+.container {
 	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 980px;
 }
 
 
 #intro {
-	color: $text;
-
-	h1 {
-		font-size: 3rem;
-	}
-
-	p {
-		font-size: 1.05rem;
-		line-height: 1.75rem;
-	}
 
 	.social {
 		padding: 0;
@@ -73,16 +111,43 @@ main {
 			list-style-type: none;
 		}
 	}
+}
 
-	a {
-		padding-bottom: .25rem;
-		border-bottom: 2px solid $cyan;
-		color: $accent;
-		font-weight: 600;
-		text-decoration: none;
 
-		&:hover {
-			transform: translateY(4px);
+#work {
+	background-color: #f9f9f9;
+
+	.project-list {
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: block;
+			margin-bottom: 1.5rem;
+			list-style: none;
+
+			&:last-of-type {
+				margin-bottom: 0;
+
+				a {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		a {
+			margin-bottom: .25rem;
+		}
+
+		p {
+			margin: 0;
+			font-size: .875rem;
 		}
 	}
+}
+
+footer {
+	padding: 4rem 0;
+	background-color: $dark;
+	color: $light;
 }
