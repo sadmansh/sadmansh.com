@@ -2,7 +2,7 @@ import styles from '../../styles/Home.module.scss'
 
 const Work = () => {
 	return (
-		<section className={styles.work}>
+		<section className={styles.work} id="work">
 			<div className="container">
 				<h2>My Work</h2>
 				<p>When I am working as an independent contractor, I usually help out agencies with the more complicated parts of their projects and sometimes the whole project itself. This is a list of some of those and also some of my own side projects.</p>
