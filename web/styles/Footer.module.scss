@@ -1,0 +1,22 @@
+@import "variables";
+
+.footer {
+	padding: 4rem 0;
+	background-color: $black;
+
+	ul {
+		padding: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 1rem;
+		list-style: none;
+	}
+
+	a {
+		color: $white;
+		background-image: none;
+	}
+}

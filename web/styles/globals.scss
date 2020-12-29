@@ -1,17 +1,44 @@
+@import "fonts";
+@import "variables";
+
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
+	font-family: 'Graphik';
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+a {
+	background-image: linear-gradient(transparent 60%, $accent 0);
+	color: $black;
+	font-weight: 600;
+	transform: none;
+	outline: none;
+	text-decoration: none;
+
+	&:hover {
+		background-image: linear-gradient(transparent 60%, #18e1d3 0);
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 980px;
+}
+
+section {
+	padding: 4rem 0;
+}
+
+p {
+	font-size: 1.05rem;
+	line-height: 1.75rem;
 }
