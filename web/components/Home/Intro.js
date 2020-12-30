@@ -8,7 +8,7 @@ const Intro = () => {
 				<small>(I am not sad)</small>
 				<p>I am a Software Engineer, focused on front-end, with a strong passion in building simple, and functional web applications. I build user-focused apps with UX, testing, and performance constraints in mind. I also write clean and well-documented code (like literally every other developer).</p>
 
-				<p>I mainly work with React and Node, but I have years of experience with Django, React, and WordPress.</p>
+				<p>I mainly work with React.js and Node.js, but I also have years of experience working with Django, Vue.js, and WordPress.</p>
 
 				<p>I'm currently building cool things at <a href="https://www.industrydive.com" target="blank" rel="noopener noreferrer" id="industrydive-url">Industry Dive</a>. Here's my <a href="/Resume-Sadman-Shawmik.pdf" target="_blank" id="resume-url">resume</a>.</p>
 
