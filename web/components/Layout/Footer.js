@@ -14,7 +14,7 @@ const Footer = () => (
 					<Link href="/blog">Blog</Link>
 				</li>
 				<li>
-					<Link href="/rss.xml">RSS</Link>
+					<Link href="mailto:hello@sadmansh.com">Send me an email</Link>
 				</li>
 			</ul>
 		</div>
