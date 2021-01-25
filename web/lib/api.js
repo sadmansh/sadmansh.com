@@ -6,6 +6,15 @@ const client = sanityClient({
 	useCdn: true
 })
 
+export const getAllSlugs = async () => {
+	const data = await client.fetch(`
+		*[_type == 'post'] {
+			slug
+		}
+	`)
+	return data
+}
+
 export const getAllPosts = async () => {
 	const data = await client.fetch(`
 		*[_type == 'post'] {
@@ -34,15 +43,20 @@ export const getPostsByCategory = async (cat) => {
 }
 
 export const getPost = async (slug) => {
-	const data = await client.fetch(`
-		*[_type == 'post' && slug == ${slug}] {
+	const data = await client.fetch(
+		`
+		*[slug.current == $slug] {
 			_id,
 			title,
 			publishedAt,
 			category,
 			tags,
-			blockContent
+			body
 		}[0]
-	`)
+	`,
+		{
+			slug: slug
+		}
+	)
 	return data
 }

@@ -1,9 +1,8 @@
-import AllPosts from '../components/Blog/AllPosts'
-import Main from '../components/Layout/Main'
-import MainHead from '../components/Layout/MainHead'
-import { getAllPosts } from '../lib/api'
+import Main from '../../components/Layout/Main'
+import MainHead from '../../components/Layout/MainHead'
+import { getAllSlugs, getPost } from '../../lib/api'
 
-const Index = ({ posts }) => {
+const ArticlePage = ({ postData }) => {
 	return (
 		<>
 			<MainHead>
@@ -16,22 +15,28 @@ const Index = ({ posts }) => {
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content="Sadman Shawmik" />
 				<meta name="twitter:description" content="Software Engineer. This is my portfolio and blog." />
-				<title>Blog - Sadman Shawmik</title>
+				<title>Sadman Shawmik - Software Engineer</title>
 			</MainHead>
-			<Main>
-				<AllPosts posts={posts} />
-			</Main>
+			<Main></Main>
 		</>
 	)
 }
 
-export const getStaticProps = async (context) => {
-	const data = await getAllPosts()
+export default ArticlePage
+
+export const getStaticPaths = async (props) => {
+	const data = await getAllSlugs()
+	const paths = data.map((post) => ({
+		params: { slug: post.slug.current }
+	}))
+	return { paths, fallback: 'blocking' }
+}
+
+export const getStaticProps = async ({ params }) => {
+	const data = await getPost(params.slug)
 	return {
 		props: {
-			posts: data
+			postData: data
 		}
 	}
 }
-
-export default Index
