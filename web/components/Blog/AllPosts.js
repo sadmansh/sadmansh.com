@@ -7,9 +7,11 @@ const AllPosts = ({ posts }) => {
 			<div className="container">
 				<h1>Latest Articles</h1>
 				<div className={styles.posts}>
-					{posts.map((post) => (
+					{posts && posts.map((post) => (
 						<Post post={post} key={post._id} />
-					))}
+					)) :
+						<h2>Sorry, no posts to show.</h2>
+					}
 				</div>
 			</div>
 		</div>
