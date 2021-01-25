@@ -44,8 +44,12 @@ a {
 
 .container {
 	margin: 0 auto;
-	padding: 0 2rem;
+	padding: 0 1.5rem;
 	max-width: 840px;
+
+	@include breakpoint(m) {
+		padding: 0 2rem;
+	}
 }
 
 section {
