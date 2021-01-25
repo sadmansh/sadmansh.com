@@ -12,7 +12,7 @@ const Post = ({ post }) => {
 							day: 'numeric'
 						})}
 					</time>
-					<h3>{post.title}</h3>
+					<h2>{post.title}</h2>
 				</a>
 			</Link>
 		</div>

@@ -16,7 +16,7 @@ const Article = ({ post }) => {
 	return (
 		<article className={styles.article}>
 			<div className="container">
-				<h2>{post.title}</h2>
+				<h1>{post.title}</h1>
 				<div className="post-meta">
 					By <Link href="/">Sadman</Link> on{' '}
 					{new Date(post.publishedAt).toLocaleDateString('en-US', {
