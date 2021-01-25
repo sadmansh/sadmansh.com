@@ -1,3 +1,4 @@
+import Link from 'next/Link'
 import styles from '../../styles/Footer.module.scss'
 
 const Footer = () => (
@@ -5,15 +6,15 @@ const Footer = () => (
 		<div className="container">
 			<ul className="social-links">
 				<li>
-					<a aria-current="page" href="/">
-						About
-					</a>
+					<Link href="/">
+						<a aria-current="page">About</a>
+					</Link>
 				</li>
 				<li>
-					<a href="/blog">Blog</a>
+					<Link href="/blog">Blog</Link>
 				</li>
 				<li>
-					<a href="/rss.xml">RSS</a>
+					<Link href="/rss.xml">RSS</Link>
 				</li>
 			</ul>
 		</div>
