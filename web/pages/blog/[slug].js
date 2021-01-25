@@ -1,5 +1,6 @@
 import Main from '../../components/Layout/Main'
 import MainHead from '../../components/Layout/MainHead'
+import Article from '../../components/Blog/Article'
 import { getAllSlugs, getPost } from '../../lib/api'
 
 const ArticlePage = ({ postData }) => {
@@ -17,7 +18,9 @@ const ArticlePage = ({ postData }) => {
 				<meta name="twitter:description" content="Software Engineer. This is my portfolio and blog." />
 				<title>Sadman Shawmik - Software Engineer</title>
 			</MainHead>
-			<Main></Main>
+			<Main>
+				<Article post={postData} />
+			</Main>
 		</>
 	)
 }
