@@ -28,8 +28,8 @@ export default {
     {
       name: 'category',
       title: 'Category',
-      type: 'object',
-      of: [{ type: 'reference', to: { type: 'category' } }]
+      type: 'reference',
+      to: [{ type: 'category' }]
     },
     {
       name: 'tags',
