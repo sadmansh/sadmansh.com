@@ -6,13 +6,15 @@ const AllPosts = ({ posts }) => {
 		<div className={styles.allPosts}>
 			<div className="container">
 				<h1>Latest Articles</h1>
-				<div className={styles.posts}>
-					{posts && posts.map((post) => (
-						<Post post={post} key={post._id} />
-					)) :
-						<h2>Sorry, no posts to show.</h2>
-					}
-				</div>
+				{posts.length ? (
+					<div className={styles.posts}>
+						{posts.map((post) => (
+							<Post post={post} key={post._id} />
+						))}
+					</div>
+				) : (
+					<h2>Sorry, no posts to show 😔</h2>
+				)}
 			</div>
 		</div>
 	)
