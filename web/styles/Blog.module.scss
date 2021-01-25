@@ -1,0 +1,33 @@
+@import 'variables';
+
+.allPosts {
+	margin: 2rem 0;
+
+	h2 {
+		margin-top: 0;
+		margin-left: 0.75rem;
+		font-size: 2.5rem;
+		font-weight: 500;
+	}
+}
+
+.post {
+	a {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		padding: 0.75rem 1rem;
+		background-image: none;
+	}
+
+	time {
+		font-weight: 400;
+		font-size: 0.875rem;
+		color: $light-text;
+	}
+
+	h3 {
+		margin: 0 0 0 1rem;
+		font-weight: 400;
+	}
+}

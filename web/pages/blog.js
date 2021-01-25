@@ -1,9 +1,9 @@
+import AllPosts from '../components/Blog/AllPosts'
 import Main from '../components/Layout/Main'
 import MainHead from '../components/Layout/MainHead'
 import { getAllPosts } from '../lib/api'
 
 const Index = ({ posts }) => {
-	console.log(posts)
 	return (
 		<>
 			<MainHead>
@@ -18,7 +18,9 @@ const Index = ({ posts }) => {
 				<meta name="twitter:description" content="Software Engineer. This is my portfolio and blog." />
 				<title>Blog - Sadman Shawmik</title>
 			</MainHead>
-			<Main></Main>
+			<Main>
+				<AllPosts posts={posts} />
+			</Main>
 		</>
 	)
 }
