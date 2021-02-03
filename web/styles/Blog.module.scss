@@ -85,3 +85,41 @@
 		}
 	}
 }
+
+.articleContent {
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 500;
+	}
+
+	h2:not(:first-child),
+	h3:not(:first-child),
+	h4:not(:first-child) {
+		margin-top: 3rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	pre {
+		white-space: pre-wrap;
+		word-spacing: normal;
+		word-break: normal;
+		word-wrap: normal;
+		-webkit-font-smoothing: subpixel-antialiased;
+		line-height: 1.7;
+		tab-size: 4;
+
+		code {
+			padding: 1rem;
+			border-radius: 6px;
+			box-shadow: 0 0 1px rgb(0 0 0 / 10%), 0 0 1px rgb(0 0 0 / 6%), 0 2px 2px rgb(0 0 0 / 6%),
+				0 4px 4px rgb(0 0 0 / 6%), 0 8px 8px rgb(0 0 0 / 6%), 0 16px 16px rgb(0 0 0 / 6%);
+			font-family: 'Fira Code', monospace;
+		}
+	}
+}
