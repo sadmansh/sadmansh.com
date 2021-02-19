@@ -42,6 +42,17 @@ const Work = () => {
 					</li>
 					<li>
 						<a
+							href="https://www.mujibalbum.com"
+							rel="noopener noreferrer"
+							target="_blank"
+							id="work-url-mujibalbum"
+						>
+							Mujib Album
+						</a>
+						<p>React (Next.js), GraphQL</p>
+					</li>
+					<li>
+						<a
 							href="https://github.com/sadmansh/snapcharge"
 							rel="noopener noreferrer"
 							target="_blank"
