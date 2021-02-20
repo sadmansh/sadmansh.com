@@ -1,5 +1,6 @@
 import Intro from '../components/Home/Intro'
 import Work from '../components/Home/Work'
+import Help from '../components/Home/Help'
 import Main from '../components/Layout/Main'
 import MainHead from '../components/Layout/MainHead'
 
@@ -20,6 +21,7 @@ const Index = () => {
 			</MainHead>
 			<Main>
 				<Intro />
+				<Help />
 				<Work />
 			</Main>
 		</>

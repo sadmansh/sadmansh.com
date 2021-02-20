@@ -11,6 +11,7 @@ body {
 }
 
 body {
+	background-color: lighten($beige, 5%);
 	color: $text;
 }
 
@@ -54,6 +55,12 @@ a {
 
 section {
 	padding: 4rem 0;
+
+	h2 {
+		margin-top: 0;
+		font-size: 2.5rem;
+		font-weight: 500;
+	}
 }
 
 p {

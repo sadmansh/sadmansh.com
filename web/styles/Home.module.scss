@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .intro {
 	h1 {
@@ -10,7 +10,7 @@
 	small {
 		display: block;
 		margin-top: -2rem;
-		font-size: .5rem;
+		font-size: 0.5rem;
 	}
 
 	ul {
@@ -24,14 +24,16 @@
 	}
 }
 
-.work {
-	background-color: $grey;
+.help {
+	padding-top: 0;
 
 	h2 {
-		margin-top: 0;
-		font-size: 2.5rem;
-		font-weight: 500;
+		font-size: 2rem;
 	}
+}
+
+.work {
+	background-color: $beige;
 
 	ul {
 		padding: 0;
@@ -44,12 +46,12 @@
 		list-style: none;
 
 		a {
-			margin-bottom: .25rem;
+			margin-bottom: 0.25rem;
 		}
 
 		p {
 			margin: 0;
-			font-size: .875rem;
+			font-size: 0.875rem;
 		}
 	}
 }
