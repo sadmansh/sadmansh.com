@@ -21,7 +21,7 @@ const Intro = () => {
 					I'm currently building cool things at{' '}
 					<a
 						href="https://www.industrydive.com"
-						target="blank"
+						target="_blank"
 						rel="noopener noreferrer"
 						id="industrydive-url"
 					>
@@ -42,17 +42,27 @@ const Intro = () => {
 
 				<ul className="social">
 					<li>
-						<a href="https://github.com/sadmansh" target="blank" id="github-url">
+						<a href="https://github.com/sadmansh" target="_blank" rel="noopener noreferrer" id="github-url">
 							GitHub
 						</a>
 					</li>
 					<li>
-						<a href="https://linkedin.com/in/sadmansh" target="blank" id="linkedin-url">
+						<a
+							href="https://linkedin.com/in/sadmansh"
+							target="_blank"
+							rel="noopener noreferrer"
+							id="linkedin-url"
+						>
 							LinkedIn
 						</a>
 					</li>
 					<li>
-						<a href="https://instagram.com/sadmansh" target="blank" id="instagram-url">
+						<a
+							href="https://instagram.com/sadmansh"
+							target="_blank"
+							rel="noopener noreferrer"
+							id="instagram-url"
+						>
 							Instagram
 						</a>
 					</li>
