@@ -15,6 +15,7 @@ hljs.registerLanguage('php', php)
 
 const Article = ({ post }) => {
 	useEffect(() => {
+		hljs.initHighlighting.called = false
 		hljs.initHighlighting()
 	}, [post])
 
@@ -29,8 +30,8 @@ const Article = ({ post }) => {
 						<code className={props.node.language}>{props.node.code}</code>
 					</pre>
 				</>
-			)
-		}
+			),
+		},
 	}
 
 	return (
@@ -42,7 +43,7 @@ const Article = ({ post }) => {
 					{new Date(post.publishedAt).toLocaleDateString('en-US', {
 						year: 'numeric',
 						month: 'short',
-						day: 'numeric'
+						day: 'numeric',
 					})}
 				</div>
 				<BlockContent className={styles.articleContent} blocks={post.body} serializers={serializers} />
