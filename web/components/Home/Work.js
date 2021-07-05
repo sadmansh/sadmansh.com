@@ -13,12 +13,6 @@ const Work = () => {
 
 				<ul className="project-list">
 					<li>
-						<a href="https://www.ricemedia.co" rel="noopener noreferrer" target="_blank" id="work-url-rice">
-							Rice
-						</a>
-						<p>WordPress, JavaScript</p>
-					</li>
-					<li>
 						<a
 							href="https://entertainment.directv.com"
 							rel="noopener noreferrer"
@@ -41,6 +35,12 @@ const Work = () => {
 						<p>React, WordPress REST API</p>
 					</li>
 					<li>
+						<a href="https://www.ricemedia.co" rel="noopener noreferrer" target="_blank" id="work-url-rice">
+							Rice
+						</a>
+						<p>WordPress, JavaScript</p>
+					</li>
+					<li>
 						<a
 							href="https://www.mujibalbum.com"
 							rel="noopener noreferrer"
@@ -61,17 +61,6 @@ const Work = () => {
 							SnapCharge
 						</a>
 						<p>React, Redux, Node</p>
-					</li>
-					<li>
-						<a
-							href="https://www.asianfilmarchive.org"
-							rel="noopener noreferrer"
-							target="_blank"
-							id="work-url-afa"
-						>
-							Asian Film Archive
-						</a>
-						<p>WordPress</p>
 					</li>
 				</ul>
 			</div>
