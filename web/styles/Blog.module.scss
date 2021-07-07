@@ -112,6 +112,21 @@
 				background-image: none;
 				color: $heading;
 			}
+
+			ul {
+				display: inline-block;
+				margin-top: 1rem;
+				margin-bottom: 0;
+				padding-left: 0;
+
+				li {
+					display: inline-block;
+					list-style: none;
+					margin-left: 0.5rem;
+					font-weight: 400;
+					background-color: $accent;
+				}
+			}
 		}
 	}
 }

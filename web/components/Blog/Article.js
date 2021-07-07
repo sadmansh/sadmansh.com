@@ -15,8 +15,8 @@ hljs.registerLanguage('php', php)
 
 const Article = ({ post }) => {
 	useEffect(() => {
-		hljs.initHighlighting.called = false
-		hljs.initHighlighting()
+		hljs.highlightAll.called = false
+		hljs.highlightAll()
 	}, [post])
 
 	const serializers = {
@@ -45,6 +45,16 @@ const Article = ({ post }) => {
 						month: 'short',
 						day: 'numeric'
 					})}
+					{post.tags && (
+						<div className="tags">
+							<span>In </span>
+							<ul className="post-tags">
+								{post.tags.map((tag) => (
+									<li key={tag._id}>{tag.title}</li>
+								))}
+							</ul>
+						</div>
+					)}
 				</div>
 				<BlockContent className={styles.articleContent} blocks={post.body} serializers={serializers} />
 			</div>

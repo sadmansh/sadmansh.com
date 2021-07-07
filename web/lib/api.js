@@ -57,7 +57,7 @@ export const getPost = async (slug) => {
 			title,
 			publishedAt,
 			category,
-			tags,
+			tags[]->{_id, title, slug},
 			body
 		}[0]
 	`,
