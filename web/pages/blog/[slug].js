@@ -28,7 +28,7 @@ const ArticlePage = ({ postData }) => {
 export default ArticlePage
 
 export const getStaticPaths = async (props) => {
-	const data = await getAllSlugs()
+	const data = await getAllSlugs('post')
 	const paths = data.map((post) => ({
 		params: { slug: post.slug.current }
 	}))

@@ -6,18 +6,18 @@ const client = sanityClient({
 	useCdn: true
 })
 
-export const getAllSlugs = async () => {
+export const getAllSlugs = async (type) => {
 	const data = await client.fetch(`
-		*[_type == 'post'] {
+		*[_type == ${type}] {
 			slug
 		}
 	`)
 	return data
 }
 
-export const getAllPosts = async () => {
+export const getAllPosts = async (type) => {
 	const data = await client.fetch(`
-		*[_type == 'post'] {
+		*[_type == ${type}] {
 			_id,
 			title,
 			slug,
@@ -29,9 +29,9 @@ export const getAllPosts = async () => {
 	return data
 }
 
-export const getPostsByCategory = async (cat) => {
+export const getPostsByCategory = async (type, cat) => {
 	const data = await client.fetch(`
-		*[_type == 'post' && category == ${cat}] {
+		*[_type == ${type} && category == ${cat}] {
 			_id,
 			title,
 			slug,
