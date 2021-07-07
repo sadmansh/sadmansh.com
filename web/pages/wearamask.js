@@ -5,7 +5,7 @@ const Index = () => {
 	return (
 		<>
 			<MainHead>
-				<meta charset="UTF-8" />
+				<meta charSet="UTF-8" />
 				<meta name="description" content="Please wear a mask." />
 				<meta property="og:title" content="Sadman Shawmik" />
 				<meta property="og:description" content="Please wear a mask." />

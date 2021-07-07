@@ -7,7 +7,7 @@ const Index = ({ posts }) => {
 	return (
 		<>
 			<MainHead>
-				<meta charset="UTF-8" />
+				<meta charSet="UTF-8" />
 				<meta name="description" content="Software Engineer. This is my portfolio and blog." />
 				<meta property="og:title" content="Sadman Shawmik" />
 				<meta property="og:description" content="Software Engineer. This is my portfolio and blog." />
