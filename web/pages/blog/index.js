@@ -26,7 +26,7 @@ const Index = ({ posts }) => {
 }
 
 export const getStaticProps = async (context) => {
-	const data = await getAllPosts('post')
+	const data = await getAllPosts()
 	return {
 		props: {
 			posts: data
