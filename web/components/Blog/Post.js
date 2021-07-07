@@ -13,6 +13,13 @@ const Post = ({ post }) => {
 						})}
 					</time>
 					<h2>{post.title}</h2>
+					{post.tags && (
+						<ul className="post-tags">
+							{post.tags.map((tag) => (
+								<li key={tag._id}>{tag.title}</li>
+							))}
+						</ul>
+					)}
 				</a>
 			</Link>
 		</div>

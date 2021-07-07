@@ -6,6 +6,7 @@ $grey: #f9f9f9;
 $light-text: #858b93;
 $text: #495057;
 $heading: #121118;
+$link-color: #0070f3;
 
 @mixin breakpoint($point) {
 	@if $point == s {

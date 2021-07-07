@@ -23,7 +23,7 @@ export const getAllPosts = async () => {
 			slug,
 			publishedAt,
 			category,
-			tags
+			tags[]->{_id, title, slug}
 		}
 	`)
 	return data
@@ -40,7 +40,7 @@ export const categoryQuery = async (slug) => {
 				title,
 				slug,
 				publishedAt,
-				tags
+				tags[]->{_id, title, slug}
 			}
 		}[0]
 	`,
