@@ -1,9 +1,9 @@
 import AllPosts from '../../components/Blog/AllPosts'
 import Main from '../../components/Layout/Main'
 import MainHead from '../../components/Layout/MainHead'
-import { getAllPosts } from '../../lib/api'
+import { categoryQuery } from '../../lib/api'
 
-const Index = ({ posts }) => {
+const Index = ({ posts, category }) => {
 	return (
 		<>
 			<MainHead>
@@ -16,20 +16,24 @@ const Index = ({ posts }) => {
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content="Sadman Shawmik" />
 				<meta name="twitter:description" content="Software Engineer. This is my portfolio and blog." />
-				<title>Blog - Sadman Shawmik</title>
+				<title>Snippets - Sadman Shawmik</title>
 			</MainHead>
 			<Main>
-				<AllPosts posts={posts} />
+				<AllPosts posts={posts} category={category} />
 			</Main>
 		</>
 	)
 }
 
 export const getStaticProps = async (context) => {
-	const data = await getAllPosts('snippet')
+	const data = await categoryQuery('snippets')
 	return {
 		props: {
-			posts: data
+			posts: data.posts,
+			category: {
+				slug: data.slug.current,
+				title: data.title
+			}
 		}
 	}
 }

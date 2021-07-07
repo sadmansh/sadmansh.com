@@ -1,11 +1,11 @@
 import Post from './Post'
 import styles from '../../styles/Blog.module.scss'
 
-const AllPosts = ({ posts }) => {
+const AllPosts = ({ posts, category = null }) => {
 	return (
 		<div className={styles.allPosts}>
 			<div className="container">
-				<h1>Latest Articles</h1>
+				<h1>{category ? `All ${category.title}` : `Latest Articles`}</h1>
 				{posts.length ? (
 					<div className={styles.posts}>
 						{posts.map((post) => (
