@@ -17,7 +17,7 @@ export const getAllSlugs = async () => {
 
 export const getAllPosts = async () => {
 	const data = await client.fetch(`
-		*[_type == 'post'] {
+		*[_type == 'post' && category->slug.current != 'snippets'] {
 			_id,
 			title,
 			slug,
