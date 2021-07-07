@@ -1,3 +1,5 @@
+@import 'variables';
+
 .header {
 	padding: 1rem 0;
 
@@ -28,8 +30,15 @@
 	}
 
 	span {
+		display: none;
 		margin-left: 1rem;
 		font-size: 1rem;
 		font-weight: 600;
+	}
+
+	@include breakpoint(m) {
+		span {
+			display: block;
+		}
 	}
 }

@@ -15,6 +15,7 @@ const Header = () => (
 			<nav>
 				<Link href="/">About</Link>
 				<Link href="/#work">Work</Link>
+				<Link href="/snippets">Snippets</Link>
 			</nav>
 		</div>
 	</header>
